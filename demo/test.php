@@ -6,4 +6,7 @@
  */
 
 $msg = "执行时间：".date('Y-m-d H:i:s')."\n";
-file_put_contents("test.log",$msg,FILE_APPEND);
+$file = dirname(__FILE__).'/test.log';
+$fp = fopen($file,'a');
+fwrite($fp,$msg);
+fclose($fp);
