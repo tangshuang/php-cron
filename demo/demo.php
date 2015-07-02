@@ -6,7 +6,7 @@
  */
 
 // 先引入和声明Crone类
-//define('CRON_URL','http://'.$_SERVER['SERVER_NAME'].'/php-cron/cron/'); // 这个定义用来告诉CRON定时文件的访问路径目录，该目录下的cron.php和cron-check.php是定时入口文件，但是如果你是将php-cron放在根目录下的话，其实是可以不用声明的，只有自己重新规定了路径时才需要定义，注意：cron.php和cron-check.php必须同时在该目录下，不能分开
+//define('CRON_URL','http://'.$_SERVER['SERVER_NAME'].'/php-cron/cron/cron.php'); // 这个定义用来告诉CRON定时文件的访问路径，如果你是将php-cron放在根目录下的话，其实是可以不用声明
 require(dirname(__FILE__).'/../cron/Cron.Class.php');
 use PHPCron\Cron;
 $Cron = new Cron();
