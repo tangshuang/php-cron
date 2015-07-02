@@ -1,2 +1,0 @@
-<?php exit(); ?>
-a:6:{s:4:"name";s:6:"mycron";s:13:"next_run_time";d:1435839954.679541110992431640625;s:8:"interval";i:60;s:3:"url";s:39:"http://127.0.0.1/php-cron/demo/test.php";s:13:"last_run_time";d:1435839894.679541110992431640625;s:6:"status";i:1;}
