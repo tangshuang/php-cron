@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * @作者：否子戈
+ *
+ * 用来实现本地的PHP定时任务，无需借助Liunx CronTab，而是借助生成本地文件，可以实现定时任务
+ *
+ */
+
 namespace PHPCron;
 date_default_timezone_set('PRC');
 
