@@ -7,9 +7,9 @@
 
 // 先引入和声明Crone类
 //define('CRON_URL','http://'.$_SERVER['SERVER_NAME'].'/php-cron/cron/cron.php'); // 这个定义用来告诉CRON定时文件的访问路径，如果你是将php-cron放在根目录下的话，其实是可以不用声明
-require(dirname(__FILE__).'/../cron/Cron.Class.php');
-use PHPCron\Cron;
-$Cron = new Cron();
+require(dirname(__FILE__).'/../cron/Cron.FILE.Class.php');
+use PHPCron\FILE\Cron as CronFILE;
+$Cron = new CronFILE();
 
 // $name是这个定时任务的名称，一但添加这个任务，就会在../schedules目录中生成一个$name.php文件用来记录这个任务的执行时间、要访问的url
 $name = 'mycron';

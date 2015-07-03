@@ -1,12 +1,12 @@
 <?php
 
-require(dirname(__FILE__).'/Cron.Class.php');
+require(dirname(__FILE__).'/Cron.FILE.Class.php');
 
 ignore_user_abort(true);
 set_time_limit(0);
 
-use PHPCron\Cron;
-$Cron = new Cron();
+use PHPCron\FILE\Cron as CronFILE;
+$Cron = new CronFILE();
 
 // 如果不存在cron参数，则对所有任务进行检查，如果发现某些任务没有执行，那么现在执行它
 if(!isset($_GET['cron'])) {

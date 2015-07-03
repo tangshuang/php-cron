@@ -7,7 +7,7 @@
  *
  */
 
-namespace PHPCron;
+namespace PHPCron\FILE;
 date_default_timezone_set('PRC');
 
 class Cron {
